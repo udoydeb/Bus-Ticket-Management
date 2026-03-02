@@ -53,7 +53,7 @@ void enqueueWaiting(int contact, int busNum, int seat, char name[50]);
 void dequeueWaiting();
 void printWaiting();
 
-// ticket history functions - Kamy
+// ticket history functions 
 passenger *newPassenger(int contact, int busNum, int seat, int book, char name[50]);
 void pushPassenger(passenger **stack, int contact, int busNum, int seat, int book, char name[50]);
 void printstack(passenger *stack);
@@ -1070,4 +1070,5 @@ void freePassengerStack()
         current = nextPass;
     }
     stack = NULL;
+
 }
